@@ -5,7 +5,7 @@ resource "aws_volume_attachment" "ebs_att" {
 }
 
 resource "aws_instance" "web" {
-  ami               = "ami-1853ac65"
+  ami               = "ami-12345"
   availability_zone = "us-east-1a"
   instance_type     = "t2.micro"
 
