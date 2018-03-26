@@ -1,7 +1,7 @@
 resource "aws_ebs_volume" "example" {
 size = 10
-availability_zone = "us-east-1"
+availability_zone = "Your_Availability_Zone"
 tags {
-Name = "Volume-PM-New"
+Name = "Give_Name_to_Your_volume"
 }
 }
