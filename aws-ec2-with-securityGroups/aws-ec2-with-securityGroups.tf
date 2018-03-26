@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "Your_Region_Name"
 }
 
 resource "aws_security_group" "w1_security_group"{
-name = "SG-PM-2018"
+name = "Security_Group_Name"
 description = "Test Security group 2018"
 
 ingress {
@@ -24,10 +24,10 @@ egress {
 
 resource "aws_instance" "w1_instance" {
 instance_type = "t2.micro"
-ami = "ami-1853ac65"
+ami = "ami-1234567"
 vpc_security_group_ids = [ "${aws_security_group.w1_security_group.id}" ]
-key_name = "samplekeyPM-1"
-tags { Name = "w1-instance-PM" }
+key_name = "Your_Key_Name"
+tags { Name = "Provide_Name_to_Instance" }
 
 
 depends_on = ["aws_security_group.w1_security_group"]
