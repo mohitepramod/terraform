@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "Your_Region"
 }
 
-resource "aws_s3_bucket" "pmaopcito12" {
-  bucket = "my-tf-test-bucket-2018"
+resource "aws_s3_bucket" "Example" {
+  bucket = "Unique_Bucket_Name"
   acl = "private"
   tags {
-    Name = "opcito-PM-2018"
+    Name = "SampleTag"
   }
 }
 
