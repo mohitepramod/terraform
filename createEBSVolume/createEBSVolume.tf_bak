@@ -1,0 +1,6 @@
+resource "aws_ebs_volume" "example" {
+size = 10
+tags {
+Name = "Volume-PM-New"
+}
+}
